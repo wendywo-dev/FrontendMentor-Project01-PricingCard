@@ -34,6 +34,7 @@ h2, h4, p {
   width: 100%;
   height: 40%;
   padding: 30px;
+  line-height: 1.2rem;
 }
 
 .top-section h2 {
@@ -124,14 +125,44 @@ button:hover {
   list-style: none;
   font-size: 0.8rem;
   opacity: 0.8;
+  line-height: 1.2rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 499px) {
+  html {
+    font-size: 15px;
+  }
   
+  .card {
+    width: 80vw;
+    height: 85vh;
+  }
+  
+  .top-section {
+    padding: 25px;
+  }
+  
+  .bottom-left-section, .bottom-right-section {
+  display: block;
+  width: 100%;
+  height: 50%;
+  vertical-align: top;
+  padding: 25px;
+  }
+  
+  .bottom-left-section h4 {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+
 }
 
-@media (min-width: 376px) {
+@media (min-width: 500px) {
   .card {
     max-width: 800px;
+    min-width: 500px;
   }
 }
